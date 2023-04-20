@@ -19,10 +19,14 @@ public class Exercicio10 {
 		System.out.println("Digite quantos meses de vida tem: ");
 		int mes = sc.nextInt();
 		
-		System.out.println("Digite quantos dias de vida tem ");
+		System.out.println("Digite quantos dias de vida tem: ");
 		int dia = sc.nextInt();
 		
+		int dias1 = ano * 365;
+		int dias2 = mes * 30;
+		int total = dias1 + dias2 + dia;
 		
+		System.out.println("Você tem " + total + " dias de vida.");
 
 	}
 
