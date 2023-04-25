@@ -1,5 +1,7 @@
 package logica.exercicios.aula06;
 
+import java.util.Scanner;
+
 public class Exercicio10 {
 
 	public static void main(String[] args) {
@@ -17,8 +19,44 @@ public class Exercicio10 {
 			▪ O valor do aumento.
 			▪ O novo salário, após o aumento.*/
 		
+		Scanner sc = new Scanner(System.in);
 		
-
+		
+		System.out.print("Digite seu salário: ");
+		double sal = sc.nextDouble();
+		
+		if(sal <= 280) {
+			double valor = sal*0.2;
+			double reaj = sal + valor;
+			System.out.println("Salário anterior: " + sal);
+			System.out.println("O reajuste foi de 20%.");
+			System.out.println("Valor do aumento: " + valor);
+			System.out.println("Reajuste: " + reaj);
+		}
+		else if(sal > 280 || sal <=700 ) {
+			double valor = sal*0.15;
+			double reaj = sal + valor;
+			System.out.println("Salário anterior: " + sal);
+			System.out.println("O reajuste foi de 15%.");
+			System.out.println("Valor do aumento: " + valor);
+			System.out.println("Reajuste: " + reaj);
+		}
+		else if(sal > 700 || sal <=1500 ) {
+			double valor = sal*0.10;
+			double reaj = sal + valor;
+			System.out.println("Salário anterior: " + sal);
+			System.out.println("O reajuste foi de 10%.");
+			System.out.println("Valor do aumento: " + valor);
+			System.out.println("Reajuste: " + reaj);
+		}
+		else if(sal > 1500 ) {
+			double valor = sal*0.05;
+			double reaj = sal + valor;
+			System.out.println("Salário anterior: " + sal);
+			System.out.println("O reajuste foi de 5%.");
+			System.out.println("Valor do aumento: " + valor);
+			System.out.println("Reajuste: " + reaj);
+		}
 	}
 
 }

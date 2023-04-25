@@ -13,14 +13,15 @@ public class Desafio {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Digite quantos dias de vida tem: ");
-		int dia = sc.nextInt();
+		double idDias = sc.nextInt();
 		
-		int dias1 = dia / 365;
-		int meses = dia - (dia / 30);
+		double idadeAnos = idDias / 365;
+		double meses = (((idadeAnos - (int)idadeAnos) * 365) / 30);
+		double dias = ((meses - (int)meses) * 30);
 		
 		
 		
-		System.out.println("Você tem " + dias1 + " anos, " + meses + " meses e " + dia);
+		System.out.printf("Você tem " + (int)idadeAnos + " anos, " + (int)meses + " meses e %.0f" + dias);
 
 
 	}
