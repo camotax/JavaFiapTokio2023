@@ -32,25 +32,35 @@ public class Exercicio12 {
 			a = b;
 			b = x;
 		}
-		else if(a < c) {
-			x = a;
-			a = c;
-			c = x;
-		}
-		else if(b < c) {
-			x = b;
-			b = c;
-			c = x;
-		}
+		if(b < c) {
+			x = c;
+			c = b;
+			b = x;
+		} 
 		if(a < b) {
 			x = a;
 			a = b;
 			b = x;
 		}
+		
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println(c);
 		
+		
+		if(a >= b+c) {
+			System.out.println("Não forma triângulo.");
+		} else if(a*a == b*b + c*c) {
+			System.out.println("TRIÂNGULO RETANGULO");
+		} else if (a*a > b*b + c*c) {
+			System.out.println("TRIÂNGULO OBTUSANGULO");
+		} else if (a*a < b*b + c*c) {
+			System.out.println("TRIÂNGULO ACUTANGULO");
+		} else if (a == b && a == c && c == b) {
+			System.out.println("TRIÂNGULO EQUILÁTERO");
+		} else if(a == b || b == c || c == a) {
+			System.out.println("TRIÂNGULO ISÓCELES");
+		}
 		
 
 	}
