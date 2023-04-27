@@ -10,15 +10,16 @@ public class Exercicio04 {
 		
 		int i = 0;
 		int soma = 0;
+		int num = 0;
 		
 		Scanner sc = new Scanner(System.in);
 		
 		do {
 			System.out.print("Digite um valor: ");
-			soma = sc.nextInt();
-			soma+=soma;
+			num = sc.nextInt();
+			soma+=num;
 			i++;
-		} while(i <= 10);
+		} while(i < 10);
 		
 		System.out.println("A soma é: " + soma);
 

@@ -9,7 +9,7 @@ public class IntroducaoCondicionais {
 		float nota1 = 4;
 		
 		if(nota1 < 6) {
-			System.out.println(nota);
+			System.out.println(nota1);
 		}
 		
 		

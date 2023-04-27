@@ -56,9 +56,9 @@ public class Exercicio12 {
 			System.out.println("TRIÂNGULO OBTUSANGULO");
 		} else if (a*a < b*b + c*c) {
 			System.out.println("TRIÂNGULO ACUTANGULO");
-		} else if (a == b && a == c && c == b) {
+		} else if (a == b && b == c) {
 			System.out.println("TRIÂNGULO EQUILÁTERO");
-		} else if(a == b || b == c || c == a) {
+		} else if((a == b && c != a) || (b == c && a != b)) {
 			System.out.println("TRIÂNGULO ISÓCELES");
 		}
 		
