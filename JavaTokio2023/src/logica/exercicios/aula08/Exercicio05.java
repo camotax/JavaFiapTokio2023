@@ -13,9 +13,9 @@ public class Exercicio05 {
 		
 		for(int i = 0; i <= 10; i++) {
 			System.out.println(rand.nextInt(5, 50));
-			//soma+=i;
+			soma+=i;
 			i++;
 		}
-		//System.out.println("A soma é: " + soma);
+		System.out.println("A soma é: " + soma);
 	}
 }

@@ -18,12 +18,15 @@ public class Exercicio10 {
 		System.out.println("Números primos no intervalo de 2 a 2000:");
         for (int num = 2; num <= 2000; num++) {
             boolean primo = true;
+            
             for (int i = 2; i <= Math.sqrt(num); i++) {
+            	
                 if (num % i == 0) {
                     primo = false;
                     break;
                 }
             }
+            
             if (primo) {
                 System.out.println(num + " ");
             }
