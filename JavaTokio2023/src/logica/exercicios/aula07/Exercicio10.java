@@ -15,21 +15,34 @@ public class Exercicio10 {
 			▪ Você precisará colocar uma estrutura de repetição dentro da outra.
 			▪ Laços aninhados!!!! */
 		
+//      boolean primo = true;
+//      
+//      int i = 0;
+//      
+//      while (num % i == 0) {
+//      	
+//          i++;
+//      }
+//      
+//      if (primo) {
+//          System.out.println(num + " ");
+//      }
+		
+		
 		System.out.println("Números primos no intervalo de 2 a 2000:");
+		
+		
         for (int num = 2; num <= 2000; num++) {
-            boolean primo = true;
-            
-            for (int i = 2; i <= Math.sqrt(num); i++) {
-            	
-                if (num % i == 0) {
-                    primo = false;
-                    break;
-                }
-            }
-            
-            if (primo) {
-                System.out.println(num + " ");
-            }
+        	int div = 2;
+        	while(num % div != 0) {
+        		div++;
+        	}
+        	
+        	
+        	if (div == num) {
+        		System.out.println(num + " é primo.");
+        	}
+
         }
 	}
 
